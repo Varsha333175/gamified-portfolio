@@ -8,14 +8,60 @@
   margin: 20px;
   border-radius: 10px;
   background-color: #f4f4f4;
+  transition: all 0.5s ease;
 }
 
 .locked {
   opacity: 0.5;
+  transform: scale(0.95);
 }
 
 .unlocked {
   opacity: 1;
   border-color: green;
   background-color: #e6ffed;
+  transform: scale(1);
+  box-shadow: 0px 4px 15px rgba(0, 255, 0, 0.2);
+  transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  margin: 20px 0;
+  height: 30px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+.badge {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #4caf50;
+  font-weight: bold;
 }
