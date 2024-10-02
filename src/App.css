@@ -65,3 +65,26 @@ button:hover {
   color: #4caf50;
   font-weight: bold;
 }
+
+.quiz {
+  margin: 20px;
+}
+
+.question-section {
+  margin-bottom: 20px;
+}
+
+.answer-section button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-section button:hover {
+  background-color: #45a049;
+}
+
